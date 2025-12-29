@@ -399,5 +399,3 @@ For questions or feedback, please open an issue in this repository.
 ---
 
 *Built as a portfolio project demonstrating production ML engineering practices.*
-#   H e a r t - D i s e a s e - P r e d i c t i o n  
- 
