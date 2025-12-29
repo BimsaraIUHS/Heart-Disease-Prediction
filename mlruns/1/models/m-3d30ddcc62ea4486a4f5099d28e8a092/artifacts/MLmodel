@@ -1,0 +1,22 @@
+artifact_path: file:C:/Users/DELL/PycharmProjects/heart_disease_prediction/mlruns/1/models/m-3d30ddcc62ea4486a4f5099d28e8a092/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+mlflow_version: 3.8.1
+model_id: m-3d30ddcc62ea4486a4f5099d28e8a092
+model_size_bytes: 739232
+model_uuid: m-3d30ddcc62ea4486a4f5099d28e8a092
+prompts: null
+run_id: d51b341e9bf144c1a757ee7aa5bacf97
+utc_time_created: '2025-12-29 15:14:10.389401'

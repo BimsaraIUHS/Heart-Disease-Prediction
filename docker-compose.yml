@@ -1,0 +1,80 @@
+# Docker Compose configuration for Heart Disease Prediction Application
+# Defines services for API and Streamlit web app
+
+version: '3.8'
+
+services:
+  # ==========================================================================
+  # FastAPI Backend Service
+  # ==========================================================================
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    container_name: heart-disease-api
+    ports:
+      - "${API_PORT:-8000}:8000"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - PYTHONPATH=/app
+    volumes:
+      # Mount models directory for easy model updates without rebuild
+      - ./models:/app/models:ro
+      - ./data:/app/data:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - heart-disease-network
+
+  # ==========================================================================
+  # Streamlit Frontend Service
+  # ==========================================================================
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    container_name: heart-disease-streamlit
+    ports:
+      - "${STREAMLIT_PORT:-8501}:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+      # API URL points to the api service within Docker network
+      - API_URL=http://api:8000
+    command: >
+      streamlit run app/streamlit_app.py
+      --server.port=8501
+      --server.address=0.0.0.0
+      --server.headless=true
+      --browser.gatherUsageStats=false
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - heart-disease-network
+
+# =============================================================================
+# Networks
+# =============================================================================
+networks:
+  heart-disease-network:
+    driver: bridge
+    name: heart-disease-network
+
+# =============================================================================
+# Volumes (optional - for persistent data)
+# =============================================================================
+volumes:
+  model-data:
+    driver: local
